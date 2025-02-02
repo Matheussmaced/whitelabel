@@ -7,6 +7,7 @@ export default function Home() {
     name: "Carregando...",
     logo: "/next.svg",
     primaryColor: "#0070f3",
+    secondaryColor: "#fff"
   });
 
   useEffect(() => {
@@ -30,7 +31,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <h1 className="text-white text-3xl">{company.name}</h1>
+        <h1 className="text-3xl" style={{ color: company.secondaryColor }}>{company.name}</h1>
       </main>
     </div>
   );

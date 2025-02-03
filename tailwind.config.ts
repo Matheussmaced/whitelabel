@@ -10,8 +10,15 @@ export default {
     extend: {
       colors: {
         background: "#6DAC73",
-        colorText: "#2A512E",
         foreground: "var(--foreground)",
+        customBlue: "#D8D2FF",
+        customWhite: "#FFFFFF",
+        customPurple: "#A395FF",
+        customBeige: "#E1FEA2",
+        textColor: "#5C46E4",
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #D8D2FF, #FFFFFF, #A395FF)',
       },
     },
   },

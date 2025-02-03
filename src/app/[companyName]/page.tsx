@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import CardComponent from "../components/card";
 
 export default function Company() {
   const { companyName } = useParams() as { companyName?: string };
@@ -24,20 +25,32 @@ export default function Company() {
 
   return (
     <div
-      className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20"
+      className="min-h-screen"
       style={{ backgroundColor: company.primaryColor }}
     >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="text-center mb-28">
+      <div className="" style={{backgroundColor: company.secondaryColor}}>
         <Image
-          className="dark:invert"
-          src={company.logo}
-          alt="Company Logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1 className="text-3xl" style={{ color: company.secondaryColor }}>{company.name}</h1>
+            className="dark:invert m-auto"
+            src={company.logo}
+            alt="Company Logo"
+            width={156}
+            height={127}
+            priority
+           /> 
+
+          <h1 className="text-1xl" style={{ color: company.secondaryColor }}>{company.name}</h1>
+        </div>
       </main>
+
+      <div className="grid grid-cols-3 gap-28 justify-around items-center mx-auto w-fit pb-10">
+       <CardComponent />
+       <CardComponent />
+       <CardComponent />
+       <CardComponent />
+       <CardComponent />
+       <CardComponent />
+      </div>
     </div>
   );
 }

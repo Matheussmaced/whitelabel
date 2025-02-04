@@ -64,7 +64,7 @@ export default function SettingsPage() {
                   <FolderPen className="z-10" />
                   <div className='absolute bg-customBeige p-3 rounded-full flex-1 ml-2'></div>
                 </div>
-                <label className="block font-medium text-textColor font-bold">Nome do site:</label>
+                <label className="block font-medium text-textColor ">Nome do site:</label>
                 <input
                   type="text"
                   name="name"
@@ -79,7 +79,7 @@ export default function SettingsPage() {
                   <Download className="z-10" />
                   <div className='absolute bg-customBeige p-3 rounded-full flex-1 ml-2'></div>
                 </div>
-                <label className="block font-medium text-textColor font-bold">Logo (URL):</label>
+                <label className="block font-medium text-textColor">Logo (URL):</label>
                 <input
                   type="text"
                   name="logo"
@@ -96,7 +96,7 @@ export default function SettingsPage() {
                   <Palette className="z-10" />
                   <div className='absolute bg-customBeige p-3 rounded-full flex-1 ml-2'></div>
                 </div>
-                <label className="block font-medium text-textColor font-bold">Cor de fundo:</label>
+                <label className="block font-medium text-textColor">Cor de fundo:</label>
                 <input
                   type="color"
                   name="primaryColor"
@@ -111,7 +111,7 @@ export default function SettingsPage() {
                   <Palette className="z-10" />
                   <div className='absolute bg-customBeige p-3 rounded-full flex-1 ml-2'></div>
                 </div>
-                <label className="block font-medium text-textColor font-bold">Cor Secundária:</label>
+                <label className="block font-medium text-textColor">Cor Secundária:</label>
                 <input
                   type="color"
                   name="secondaryColor"
@@ -126,7 +126,7 @@ export default function SettingsPage() {
                   <Palette className="z-10" />
                   <div className='absolute bg-customBeige p-3 rounded-full flex-1 ml-2'></div>
                 </div>
-                <label className="block font-medium text-textColor font-bold">Cor do texto:</label>
+                <label className="block font-medium text-textColor">Cor do texto:</label>
                 <input
                   type="color"
                   name="textColor"

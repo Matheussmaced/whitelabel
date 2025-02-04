@@ -4,4 +4,5 @@ export interface Company {
   logo: string;
   primaryColor: string;
   secondaryColor: string;
+  textColor: string;
 }

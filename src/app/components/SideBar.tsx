@@ -9,7 +9,7 @@ export function SideBar() {
 
   return (
     <main className='bg-white w-60 h-screen flex flex-col  font-mono text-colorText text-center ml-3'>
-      <div className='border-b-4 border-gradient-to-t from-[#D8D2FF] via-[#FFFFFF] to-[#A395FF] ... w-`100%` py-2'>
+      <div className='border-b-4 border-background w-`100%` py-2'>
         <Image
           src="/MatheusLOGO.png"
           width={100}

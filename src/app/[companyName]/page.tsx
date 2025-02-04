@@ -11,7 +11,8 @@ export default function Company() {
     name: decodeURIComponent(companyName || "Carregando..."),
     logo: "/next.svg",
     primaryColor: "#0070f3",
-    secondaryColor: "#fff"
+    secondaryColor: "#fff",
+    textColor: "#000"
   });
 
   useEffect(() => {
@@ -31,7 +32,7 @@ export default function Company() {
       <main className="text-center mb-28">
       <div className="" style={{backgroundColor: company.secondaryColor}}>
         <Image
-            className="dark:invert m-auto"
+            className="m-auto"
             src={company.logo}
             alt="Company Logo"
             width={156}
@@ -39,7 +40,7 @@ export default function Company() {
             priority
            /> 
 
-          <h1 className="text-1xl" style={{ color: company.secondaryColor }}>{company.name}</h1>
+          <h1 className="text-1xl py-2" style={{ color: company.textColor }}>{company.name}</h1>
         </div>
       </main>
 

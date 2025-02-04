@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { SideBar } from "../components/SideBar";
 import { useCompany } from "../context/CompanyContext";
-import { Download, FolderPen, Palette } from "lucide-react";
+import { FolderPen, Palette } from "lucide-react";
 import Image from "next/image";
+import ImageUploader from "../components/ImageUploader";
 
 
 export default function SettingsPage() {
@@ -75,17 +76,9 @@ export default function SettingsPage() {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="flex">
-                  <Download className="z-10" />
-                  <div className='absolute bg-customBeige p-3 rounded-full flex-1 ml-2'></div>
-                </div>
-                <label className="block font-medium text-textColor font-bold">Logo (URL):</label>
-                <input
-                  type="text"
-                  name="logo"
-                  value={formData.logo}
-                  onChange={handleChange}
-                  className="w-`30%` p-2 border rounded"
+                <ImageUploader
+                  imageUrl={formData.logo}
+                  onImageUpload={(imageUrl) => setFormData({ ...formData, logo: imageUrl })}
                 />
               </div>
             </div>
